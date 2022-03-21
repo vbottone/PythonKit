@@ -79,9 +79,9 @@ extension PythonLibrary {
     private static let libraryPathVersionCharacter: Character = ":"
     
     #if canImport(Darwin)
-    private static var libraryNames = ["Python.framework/Versions/:/Python"]
+    private static var libraryNames = ["Python3.framework/Versions/:/Python3"]
     private static var libraryPathExtensions = [""]
-    private static var librarySearchPaths = ["", "/opt/homebrew/Frameworks/", "/usr/local/Frameworks/", "/usr/bin/python3"]
+    private static var librarySearchPaths = ["", "/opt/homebrew/Frameworks/", "/usr/local/Frameworks/"]
     private static var libraryVersionSeparator = "."
     #elseif os(Linux)
     private static var libraryNames = ["libpython:", "libpython:m"]
